@@ -1,0 +1,499 @@
+a:focus,a:active{
+  outline: none;
+  text-decoration: none;
+}
+p{
+	margin-bottom: 0;
+}
+body{
+	background:#f2f5f7;
+	font-family: "microsoft yahei";
+}
+.container {
+	padding:0;
+	}
+@media (min-width: 1200px){
+	.container {
+	  width: 1200px;
+	}
+}
+/* 内容区开始 */
+.row.user_page{
+	margin:0;
+	margin-top: 30px;
+}
+.user_page>div{ /* col 列样式 */
+	padding: 0;
+}
+@media(min-width: 992px){
+	.user_page.row>div.distance20{
+		padding-left: 20px;
+	}
+}
+.u_cont_Frame{ /* 内容区模块 外观css */
+	border:1px solid #e6e9ea;
+	border-radius: 4px;
+	background: #fff;
+	box-shadow: 0 1px 0 rgb(235,238,240);
+	margin-bottom: 60px;
+}
+
+/* 左侧导航区开始 */
+.nav-list{
+	padding-top: 28px;
+}
+.nav-title {
+    color: #666;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    padding:0 0 12px 15px;
+}
+.nav-list .list-group{
+    margin-bottom: 45px;
+}
+.nav-list .list-group-item.active,
+.nav-list .list-group-item.active:focus,
+.nav-list .list-group-item.active:hover {
+    color: #1963e9;
+}
+.nav-list .list-group-item {
+    color: #888;
+    background: none;
+    border:none;
+    border-radius: 0;
+    padding:15px 0;
+    padding-left: 106px;
+    position: relative;
+}
+.nav-list .list-group-item:focus{
+    background: none;
+    color: #d52029;
+    outline: none;
+}
+@media(max-width: 1200px) and (min-width: 992px){
+    .nav-list .list-group-item{
+        padding-left: 86px;
+    }
+}
+.nav-list .list-group-item i{
+    display: inline-block;
+    position: absolute;
+    top:23.5px;
+    left: 53px;
+    width: 3px;
+    height: 3px;
+    background: #999;
+}
+.nav-list .list-group-item.active i,
+.nav-list .list-group-item:hover i{
+    background: #1963e9;
+}
+.nav-list .list-group-item:hover {
+    color: #1963e9;
+    background: none;
+}
+
+/* 右侧内容区开始 */
+.b_right_Frame{
+	padding: 28px 15px 15px;
+  min-height: 700px;
+}
+.breadcrumb{
+	padding:0;
+	margin:0;
+	background: none;
+	border:none;
+	color: #aaa;
+	font-size: 12px;
+}
+.breadcrumb li a,.breadcrumb>li.active{
+	color: #aaa;
+}
+.breadcrumb>li+li:before {
+  padding: 0 2px;
+  color: #aaa;
+  content: "/\00a0";
+}
+/* 按钮 */
+.btn.btn-primary{
+	background: #1976e9;
+	border-color: #1976e9;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 12px;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus{
+	background: #1963e9;
+	border-color: #1963e9;
+  outline: none;
+}
+.btn.btn-primary.b_middle{  /* 80*24 */
+	padding:5px 15px;
+}
+/* 标题行 按钮 */
+.u_frame_title .btn{
+	margin-top: -5px;
+}
+.u_frame_conts{
+	margin-top: 40px;
+}
+.u_frame_conts ul{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 25px;
+}
+.u_frame_conts .nav-pills>li{
+  margin-right: 10px;
+}
+.u_frame_conts .nav-pills>li a{
+  font-size: 12px;
+  color: #888;
+  line-height: 20px;
+  background: none;
+  padding: 0 11px;
+}
+.u_frame_conts .nav-pills>li a:hover{
+	color: #fff;
+	background:#1963e9;
+	border-color: #d52029;
+}
+.u_frame_conts .nav-pills>li.active>a,
+.u_frame_conts .nav-pills>li.active>a:focus,
+.u_frame_conts .nav-pills>li.active>a:hover{
+  color: #fff;
+  background-color: #1963e9;
+  border-color: #d52029;
+}
+/* 搜索栏 */
+.u_frame_conts form{
+	margin-bottom: 30px;
+}
+select{
+    appearance:none !important;
+    -moz-appearance:none !important;
+    -webkit-appearance:none !important;
+    padding-right: 24px !important;
+    background-image:url(../img/select_default_bbb.png) !important;
+    background-repeat:no-repeat !important;
+    background-position: 88% 50%;
+}
+.u_frame_conts .form-inline select{
+	color: #bbb;
+	font-size: 12px;
+	line-height: 12px;
+	padding:0px 12px;
+	border-radius: 2px;
+	margin-right: 5px;
+  border:1px solid #e0e0e0;
+  height: 24px;
+}
+.u_frame_conts select:focus{
+	outline: none;
+	box-shadow: none;
+	border:1px solid #bbb;
+	border-color: #bbb;
+}
+
+/* 表格区 开始 */
+.table{margin-bottom: 50px;}
+.table>thead>tr{
+	border-top:1px solid #ddd;
+    background: #f5f5f5;
+}
+.table>thead>tr>th{
+	font-size: 12px;
+	color: #888;
+	font-weight: normal;
+	border-bottom:none;
+	vertical-align: middle;
+	padding:15px 0;
+}
+.table>thead>tr>th:not(:first-child){
+	padding-left: 8px;
+  padding-right: 8px;
+}
+/* 复选框 样式 */
+.table>thead>tr th.chk_box,
+.table>tbody>tr td.chk_box{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 13px; 
+}
+.n_open{
+    width: 12px;
+    height: 12px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.n_open input{
+    margin:0;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.n_open input + label{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    background: url(../img/note_icon_noselect_sm_ccc.png);
+    z-index: 0;
+    top:2px;
+}
+.n_open input + label.c_999{
+	background: url(../img/note_icon_noselect_sm_999.png);
+}
+.n_open input:checked + label{
+    background: url(../img/note_icon_select_sm.png);
+}
+	/* 复选框 样式结束 */
+.table>tbody tr{
+  border-bottom: 1px solid #f0f0f0;
+}
+.table>tbody tr td{
+	border-top:none;
+}
+.table>tbody>tr td{
+  font-size: 12px;
+  color: #aaa;
+  padding:20px 0;
+}
+.table>tbody>tr>td:not(:first-child){
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.table>tbody>tr td.u_user_name span{
+	display: block;
+	color: #d52029;
+	margin-top: 2px;
+}
+.table>tbody>tr td.u_user_time span{
+	display: block;
+	color: #ccc;
+	margin-top: 2px;
+}
+	/* 管理 下拉列表开始 */
+table tbody td .btn-group>a{
+  color: #aaa;
+}
+table tbody td .btn-group>a:hover{
+  color: #1963e9;
+  text-decoration: none;
+}
+table tbody td .btn-group>a:focus{
+  text-decoration: none;
+}
+.xialabtn{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/test-manage-xiala.png) no-repeat 0 3px;
+}
+.table .btn-group.open .gli_hover{
+  color: #1963e9;
+  text-decoration: none;
+}
+.table .gli_hover:hover span.xialabtn,
+.table .btn-group.open .gli_hover span.xialabtn{
+  background-image: url(../img/test-manage-xiala-hover.png)
+}
+.table .dropdown-menu{
+  min-width: 1px;
+  box-shadow: none;
+  border:1px solid #f2f2f2;
+}
+.btn-group.open .dropdown-toggle{
+	box-shadow: none;
+}
+.table .dropdown-menu>li>a{
+  padding:8px 25px;
+  font-size: 12px;
+  color: #aaa;
+  line-height: 12px;
+}
+.table .dropdown-menu>li>a:hover{
+	background: #1963e9;
+  color: #fff;
+}
+table tbody td .btn-group>a:focus{
+  text-decoration: none;
+}
+
+.select_father{
+  font-size: 12px;
+  color: #aaa;
+}
+.select_father .n_open{
+    position: relative;
+    margin-left: 15px;
+    display: inline-block;
+    padding-left: 19px;
+    cursor: pointer;
+    width: auto;
+}
+.select_father .btn.btn-primary{
+	padding: 5px 12px;
+	margin-left:10px;margin-top:-3px;
+}
+
+/* 添加用户、设置角色 */
+@media (min-width: 768px){
+	.modal-dialog {
+	  width: 700px;
+	}
+}
+.modal-dialog .modal-header{
+  border:none;  
+}
+.modal-dialog .modal-header span{
+  color: #d52029;
+  text-shadow: none;
+}
+.modal-header .close{
+	font-size: 18px;
+}
+.modal-header .close:hover{
+  outline: none;
+  opacity: 0.8;
+}
+.modal-dialog .modal-body{
+  padding:20px 50px;
+}
+.modal-dialog .modal-body h4{
+  font-size: 16px;
+  color: #888;
+  font-weight: normal;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+.modal-dialog .modal-footer{
+  padding:0 50px 50px;
+  border:none;
+}
+.modal-dialog .modal-footer .btn.btn-primary{
+	padding:5px 17px;
+}
+.form-horizontal .form-group {
+    margin-bottom: 25px;
+}
+.form-horizontal .control-label{
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    font-family: "microsoft yahei";
+  }
+.modal-dialog label.radio-inline{
+  font-size: 12px;
+  color: #888;
+  padding-top: 8px;
+}
+@media(min-width: 992px){
+  .modal-dialog .radio-inline+.radio-inline{
+    margin-left: 40px;
+  }
+}
+.modal-dialog input[type='radio']{
+  /*opacity: 0;*/
+}
+input[type='radio']+.choice-img{
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+  background: url(../img/radio-03.png) no-repeat 0 3px;
+  position: absolute;
+  margin-left: -20px;
+}
+input[type='radio']:checked+.choice-img{
+  background: url(../img/radio-02.png) no-repeat 0 3px;
+}
+.form-control {
+    color: #bbb;
+    border: 1px solid #e0e0e0;
+    height: auto;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 6px 12px;
+}
+.form-inline .form-control {
+  padding: 0px 12px;
+  line-height: 22px;
+}
+.u_frame_conts .form-control {
+  margin-right: 5px;
+}
+.form-control:focus {
+    outline: none;
+    border: 1px solid #bbb;
+    box-shadow: none;
+}
+.form-control[readonly]{
+	background: none;
+	border-color: #fff;
+	padding-left: 0;
+	color: #aaa;
+}
+.form-group .help-block{
+	color: #aaa;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+.form-group .help-block.text-danger{
+	color: #a94442;
+}
+
+/*课程管理-课程图片*/
+
+.course_img_set .control-label{
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    font-family: "microsoft yahei";
+ }
+.course_img_set p{
+	font-size: 12px;
+	color: #aaa;
+}
+ 
+
+ 
+/* 课程管理开始 */
+.u_frame_conts.course_manage form select.cm_type,
+.u_frame_conts.course_manage form select.cm_state{
+	width: 15%;
+	background-position: 92% 50%;
+}
+.u_frame_conts.course_manage form .cm_name,
+.u_frame_conts.course_manage form .cm_creator{
+	width: 24%;
+}
+.course_manage .table>thead>tr>th:first-child,
+.course_manage .table>tbody>tr>td:first-child{
+	padding-left: 15px;
+}
+.table>tbody>tr td{
+	color: #888;
+}
+	/* 课程名称 */
+.course_manage .cm_classname{
+	position: relative;
+}
+.course_manage td>a{
+  color: #888;
+}
+.course_manage td>a:hover{
+  color: #d52029;
+}
+.course_manage .cm_classname .cm_fenlei{
+	display: block;
+	color: #aaa;
+}
+.course_manage .cm_classname .cm_jian{
+	position: absolute;	
+}
+	

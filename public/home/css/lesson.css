@@ -1,0 +1,453 @@
+a:focus,a:active{
+    text-decoration: none;
+    outline: none;
+}
+/* 图文播放区开始 */
+.tuwen_content {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    width: 100%;
+}
+.tuwen_content .c_cont1 {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.tuwen_content .c_cont1>div {
+    background: #fff;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    word-wrap: break-word;
+    overflow: hidden;
+    height: 100%;
+    overflow-y: auto;
+}
+/* 节列表 */
+ul.panel-keshi-body>li.section {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    background-color: #f5f5f5;
+    color: #888;
+    font-weight: bold;
+    padding: 0px 15px;
+    line-height: 30px;
+    margin: 0 15px 35px 0;
+}
+.mulu-con ul.panel-keshi-body>li.section {
+    /* 课程播放页 目录样式 */
+    margin: 0 0 35px;
+}
+.course-lesson-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #f2f5f7;
+}
+/* 视频播放区 */
+.course-lesson-frame .video-frame {
+    /* 整体框架 */
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    right: 100px;
+    bottom: 0;
+}
+/* 侧边栏展开后"视频框"样式 */
+.course-lesson-frame.right-column-open .video-frame {
+    right: 460px;
+}
+@media (max-width:1024px) {
+    .course-lesson-frame.right-column-open .video-frame {
+        right: 380px;
+    }
+}
+@media (max-width: 767px) {
+    .course-lesson-frame .video-frame {
+        right: 20px;
+        /* 此时右侧工具栏隐藏了 */
+    }
+}
+.course-lesson-frame .things{
+    position: absolute;
+    left: 0;
+    top:0;
+    right:0;
+    height: 60px;
+    border-bottom: 1px solid #e0e3e5;
+    background: #fff;
+    padding-left: 40px;
+}
+.course-lesson-frame .things a, .have-learned a{
+    border-radius: 4px;
+    float: left;
+    font-weight: normal;
+    padding: 4px 21px;
+    margin-top: 15px;
+    cursor: pointer;
+   /*  z-index: 1000; */
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.have-learned a{
+    margin-top: 10px;
+}
+.have-learned a+a{
+    margin-left: 25px;
+}
+/* 上一课时、下一课时 */
+/*.prev_next_btn {
+    position: absolute;
+    bottom: 10px;
+}
+.prev_btn {
+    left: 0;
+}
+.next_btn {
+    left: 125px;
+}*/
+.course-lesson-frame a.return-course-page {
+    padding: 4px 16px;
+    margin-right: 65px;
+}
+.course-lesson-frame .things a:hover,.have-learned a:hover{
+    background: #9a181f;
+    border-color: #9a181f;
+}
+.course-lesson-frame .things a i {
+    font-weight: normal;
+}
+.btn.btn-primary {
+    background-color: #d52029;
+    color: #fff;
+    border-radius: 4px;
+    border-color: #d52029;
+}
+.btn.btn-primary:hover {
+    background: #9a181f;
+    border-color: #9a181f;
+}
+.btn.btn-primary:focus {
+    outline: none;
+}
+.btn {
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #257e55;
+}
+
+/* 章节标题 */
+.things .chapter-title {
+    height: 60px;
+    line-height: 60px;
+    word-break: break-all;
+    overflow: hidden;
+    color: #888;
+}
+@media (max-width:560px ){
+    .things .chapter-title{
+        display: none;
+    }
+}
+.things .chapter-title .zhang,
+.things .chapter-title .jie {
+    font-size: 14px;
+    color: #888;
+}
+.things .chapter-title .keshi,
+.things .chapter-title .title {
+    font-size: 14px;
+    line-height: 60px;
+}
+/* 视频内容区开始 */
+.video-frame .video-content {
+    position: absolute;
+    top: 0px;
+    bottom: 50px;
+    width: 100%;
+    background: #000;
+}
+.video-frame .have-learned {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+.video-frame .have-learned .learned {
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.video-frame .have-learned .learned i {
+    margin-right: 5px;
+}
+/* 右侧工具条 */
+
+/* 外层框架 */
+.course-lesson-frame .toolbar-frame {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    bottom: 0;
+    width: 60px;
+    border-left: 1px solid #e9e9e9;
+    color: #666;
+    background: #fff;
+}
+.course-lesson-frame .toolbar-frame.toolbar-frame-open {
+    width: 420px;
+}
+@media (max-width: 1024px) {
+    .course-lesson-frame .toolbar-frame.toolbar-frame-open {
+        width: 360px;
+    }
+}
+/* 右侧工具条 */
+.toolbar {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    border-left: 1px solid #e9e9e9;
+    background: #333;
+}
+.toolbar>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.toolbar>ul>li>a {
+    padding: 9px 0 7px;
+    margin-bottom: 5px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: #ddd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.toolbar>ul>li.active>a,
+.toolbar>ul>li.toolbar-item>a:hover {
+    color: #fff;
+    background: #888;
+}
+.toolbar>ul>li>a i {
+    display: block;
+    margin-bottom: 5px;
+}
+.toolbar>ul>li>a .bar_icons{
+    background: url(../static/mulu_icon.png);
+    background-repeat: no-repeat;
+}
+.toolbar>ul>li>a .bar_icons.bar_icons_01{
+    height: 16px;
+    width: 26px;
+    margin-left: 16px;
+}
+/* 收起工具栏内容区“>”按钮 */
+.toolbar .hide-cont-btn {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    color: #ccc;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 5px;
+}
+.toolbar .hide-cont-btn:hover {
+    color: #fff;
+    background: #999;
+}
+/* 功能项对应的内容区 */
+.toolitem-cont-frame {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #fff;
+}
+/* 目录内容 */
+.toolitem-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.toolitem-content.mulu-con {
+    padding: 0 20px;
+}
+ul.panel-keshi-body {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+}
+ul.panel-keshi-body>li {
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+/* 章节列表 */
+ul.panel-keshi-body>li.chapter {
+    color: #666;
+    font-weight: bold;
+    padding: 25px 15px 25px 0;
+}
+ul.panel-keshi-body>li.chapter>i {
+    color: #d52029;
+}
+ul.panel-keshi-body>li.chapter.zhankai>i {
+    color: #999;
+}
+.chapter_line>div {
+    height: 1px;
+    background: #eee;
+    margin-left: 15px;
+}
+ul.panel-keshi-body>li.chapter>.flo-l {
+    position: absolute;
+    left: 0;
+    top: 28px;
+}
+ul.panel-keshi-body>li.chapter>span {
+    display: block;
+    padding: 0px 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+ul.panel-keshi-body>li.chapter>.flo-r {
+    position: absolute;
+    right: 15px;
+    top: 11px;
+}
+/* 普通内容列表 */
+ul.panel-keshi-body>li.keshi-list-item {
+    padding: 0px 80px 0px 30px;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+ul.panel-keshi-body>li.keshi-list-item>a {
+    color: #888;
+    font-size: 12px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+ul.panel-keshi-body>li.keshi-list-item:hover>a,
+ul.panel-keshi-body>li.keshi-list-item.active>a {
+   color: #d52029;
+}
+ul.panel-keshi-body>li.keshi-list-item>a:hover {
+    text-decoration: none;
+}
+/* 课时列表前 课时是否学习标记 */
+ul.panel-keshi-body>li.keshi-list-item>a i.keshi-icon {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background: url(../images/keshi-icon-psd.png) no-repeat;
+    left: 0;
+    top: 3px;
+}
+ul.panel-keshi-body>li.keshi-list-item>a i.keshi-icon.keshi-icon-doing {
+    background-position: -60px 0;
+}
+ul.panel-keshi-body>li.keshi-list-item>a i.keshi-icon.keshi-icon-done {
+    background-position: -30px 0;
+}
+ul.panel-keshi-body>li.keshi-list-item>a i.keshi-icon.keshi-icon-undone {
+    background-position: 0px 0;
+}
+ul.panel-keshi-body>li.keshi-list-item>a .title {
+    color: #888;
+}
+ul.panel-keshi-body>li.keshi-list-item:hover>a .title,
+ul.panel-keshi-body>li.keshi-list-item.active>a .title {
+    color: #d52029;
+}
+/* 课时是否包含 下载资料 */
+.tab-content ul.panel-keshi-body li>a .file-download {
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    background: url(../images/file-download01.png);
+    position: absolute;
+    top: 14px;
+    margin-left: 6px;
+}
+/* 课时时长 */
+ul.panel-keshi-body>li.keshi-list-item>a .time-length {
+    position: absolute;
+    right: 35px;
+    top: 0px;
+}
+/* 课时类型 */
+ul.panel-keshi-body>li.keshi-list-item>a .keshi-type {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 3px;
+    right: 15px;
+}
+.mulu-con ul.panel-keshi-body>li.keshi-list-item>a .keshi-type {
+    /* 播放页目录列表项样式 */
+    right: 0;
+}
+ul.panel-keshi-body>li.keshi-list-item>a .keshi-type.type-video {
+    background: url(../static/keshi-type01.png);
+}
+ul.panel-keshi-body>li.keshi-list-item>a .keshi-type.type-txt {
+    background: url(../static/keshi-type02.png);
+}
+ul.panel-keshi-body>li.keshi-list-item>a .keshi-type.type-ppt {
+    background: url(../static/keshi-type03.png);
+}
+ul.panel-keshi-body>li.keshi-list-item>a .keshi-type.type-pic {
+    background: url(../static/keshi-type04.png);
+}
+ul.panel-keshi-body>li.keshi-list-item>a .keshi-type.type-audio {
+    background: url(../static/keshi-type05.png);
+}
+ul.panel-keshi-body>li.keshi-list-item>a .keshi-type.type-test {
+    background: url(../static/keshi-type06.png);
+}
+
+/* 未发布 */
+
+ul.panel-keshi-body li>a .not-published {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}

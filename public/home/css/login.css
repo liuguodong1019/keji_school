@@ -1,0 +1,182 @@
+body{
+	background: #eeeff0;
+}
+.log-in-frame{
+	margin:30px auto;
+	min-height: 500px;
+}
+.login-content-frame{
+	padding:45px 50px 50px;
+	margin-bottom: 20px;
+	min-height: 500px;
+	background: #fff;
+	border-radius: 4px;
+	border:1px solid #e0e0e0;
+	webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+	-ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+	-o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 1200px){
+	.login-content-frame{
+		padding:15px;
+	}
+}
+.login-content-frame .top{
+	margin-bottom: 30px;
+	color: #616161;
+}
+.login-content-frame .top h2{
+	font-size:25px;
+	margin-top: 0; 
+}
+.login-content-frame .middle>.form-group{
+	margin-bottom: 40px;
+}
+.form-control{
+	border-color: #e0e0e0;
+}
+.btns-relative{
+	position: relative;
+}
+.btn{
+	padding:6px 24px;
+	/*border-radius: 5px;*/
+}
+.btns-relative span{
+	position: absolute;
+	right: 0;
+	top:7px;
+}
+.btns-relative span input{
+	margin-right: 3px;
+}
+
+.login-content-frame .bottom{
+	padding-top: 20px;
+	line-height: 20px;
+	color: #9e9e9e;
+}
+a{
+	color: #1976e9;
+}
+a:hover{
+	color: #1963e9;
+}
+
+#myModalLogin .modal-dialog,
+#myModalRegister .modal-dialog
+{
+	position: relative;
+}
+
+#myModalLogin .modal-content,
+#myModalRegister .modal-content
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -210px;
+	width: 420px;
+	border-radius: 4px;
+	padding: 50px 50px 0 50px;
+}
+#myModalLogin .modal-content .modal-header,
+#myModalRegister .modal-content .modal-header
+{
+	border: none;
+	position: relative;
+}
+#myModalLogin .modal-content .modal-header h4,
+#myModalRegister .modal-content .modal-header h4
+{
+	font-size: 20px;
+	color: #888;
+	font-weight: normal;
+	text-align: center;
+}
+#myModalLogin .modal-content .modal-header button,
+#myModalRegister .modal-content .modal-header button
+{
+	position: absolute;
+	top: -25px;
+	right: -20px;
+	font-size: 18px;
+}
+#myModalLogin .modal-content .modal-body,
+#myModalRegister .modal-content .modal-body
+{
+	border: none;
+}
+#myModalLogin .modal-content .modal-body input,
+#myModalRegister .modal-content .modal-body input
+{
+	color: #666;
+	font-size: 12px;
+	height: 45px;
+	padding-left: 16px;
+	margin-bottom: 20px;
+}
+#myModalRegister .modal-content .modal-body input {
+	height: 35px;
+}
+#myModalRegister .modal-content .modal-body input:nth-last-child(1) {
+	margin-bottom: 0;
+}
+
+#myModalLogin .modal-content .modal-body .optations_pas
+{
+	position: relative;	
+}
+#myModalLogin .modal-content .modal-body .optations_pas input
+{
+	position: absolute;
+	top: 45%;
+	left: 0;
+	margin-top: -3px;
+	width: 12px;
+	height: 12px;
+	padding: 0;
+	outline: none;
+}
+#myModalLogin .modal-content .modal-body .optations_pas span
+{
+	color: #aaa;
+	font-size: 12px;
+	margin-left: 20px;
+}
+#myModalLogin .modal-content .modal-body .optations_pas a
+{
+	font-size: 12px;
+	float: right;
+	/*margin-top: 4px;*/
+}
+#myModalLogin .modal-content .modal-footer,
+#myModalRegister .modal-content .modal-footer
+{
+	border: none;
+	margin-bottom: 35px;
+}
+#myModalLogin .modal-content .modal-footer button,
+#myModalRegister .modal-content .modal-footer button
+{
+	width: 100%;
+	padding: 0;
+	border: none;
+	line-height: 45px;
+	font-weight: normal;
+	width: 100%;
+	margin-bottom: 30px;
+	outline: none;
+	border-radius: 5px;
+	background-color: #1976e9;
+	font-size: 14px;
+	color: #fff;
+}
+
+#myModalLogin .modal-content .modal-footer button:hover,
+#myModalRegister .modal-content .modal-footer button:hover
+{
+	background-color: #1963e9;
+}

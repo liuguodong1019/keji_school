@@ -1,0 +1,212 @@
+body{
+	background: #f2f5f7;
+}
+a:hover{
+	text-decoration: none;
+}
+/* 分页*/
+#page-number-area {
+	text-align: center;
+}
+#page-number-area .pagination {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+#page-number-area li a {
+	font-size: 14px;
+	background: #eee;
+	color: #888;
+	border: none;
+	margin-right: 10px;
+	line-height: 25px;
+	padding: 0 9px;
+}
+
+#page-number-area li.active a {
+	background: #d52029;
+	color: #fff;
+}
+/*banner区开始*/
+.banner{
+	width: 100%;
+	font-family: "microsoft yahei";
+}
+.banner img{
+	width: 100%;
+	height: auto;
+}
+/* 课程内容区开始 */
+#course-content{
+	min-height: 500px;
+	padding:60px 0 100px 0;
+}	
+#course-content #course-list>div{
+	background: #fff;
+	border:1px solid #eceef0;
+	padding-bottom: 35px;
+}
+/* 课程标签 */
+#course-content .course_label{
+	margin: 0;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 30px;
+	padding-top: 37px;
+}
+#course-content .course_label ul{
+	list-style: none;
+	clear: both;
+	margin:0;
+	padding:0;
+}
+#course-content .course_label ul li{
+	float: left;
+}
+#course-content .course_label ul li+li{
+	margin-left: 25px;
+}
+#course-content .course_label ul li a{
+	display: inline-block;
+	font-size: 16px;
+	padding:13px 15px;
+	color: #666;
+}
+#course-content .course_label ul li.active a,
+#course-content .course_label ul li a:hover{
+	color: #1963e9;
+}
+
+/* 课程标题 */
+#course-list{
+	padding-bottom: 20px;
+}
+/* 课程内容列表 */
+.course-list .course-item{
+	margin-bottom: 20px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+	background-color: #fff;
+	position: relative;
+    overflow: hidden;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	padding-bottom: 15px;
+}
+.course-list .course-item .course_pic_frame{
+	position: relative;
+}
+@media(min-width: 768px){
+	.course-list .course-item{
+		height: 293px;
+	}
+}
+@media(min-width: 992px){
+	.course-list .course-item{
+		height: 264px;
+	}
+}
+@media (min-width: 1200px){
+	.course-list .course-item{
+		height: 250px;
+	}
+	.course-list .course-item .course_pic_frame{
+		width: 100%;
+		height: 152px;
+		overflow: hidden;
+	}
+}
+
+.course-list .course-item .course-img{
+	position: relative;
+	display: block;
+}
+.course-list .course-item .course-img img{
+	display: block;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	width: 100%;
+}
+.course-list .course-item .course-info{
+	padding:0px 20px;
+	background: #fff;
+    position: absolute;
+    top: 158px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 10;
+    min-height: 80px;
+}
+.course-list .course-item:hover .course-info{
+	top:69px; 
+}
+@media(max-width: 1200px){
+	.course-list .course-item .course-info{
+		top:171px;
+	}
+	.course-list .course-item:hover .course-info{
+		top:83px; 
+	}
+}
+@media(max-width: 992px){
+	.course-list .course-item .course-info{
+		top:200px;
+	}
+	.course-list .course-item:hover .course-info{
+		top:112px; 
+	}
+}
+@media(max-width: 768px){
+	.course-list .course-item .course-info{
+		position: relative;
+		bottom:0;
+		top:auto;
+	}
+	.course-list .course-item:hover .course-info{
+		bottom:0px; 
+		top:auto;
+	}
+}
+	/* 课程标题 */
+.course-list .course-item .course-info .title{
+	margin:10px auto;
+	overflow: hidden;
+}
+.course-list .course-item .course-info .title a{
+	color: #666;
+	font-size: 14px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.course-list .course-item .course-info .title a:hover{
+	color: #d52029;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.course-list .course-item .course-info .title a:focus{
+	text-decoration: none;
+}
+.course-list .course-item .course-info .title span{
+	font-size: 12px;
+	color: #888;
+}
+.course-list .course-item .course-info .title p{
+	font-size: 12px;
+	color: #888;
+	margin-bottom: 0;
+	margin-top: 5px;
+	max-height: 120px;
+	overflow: hidden;
+	line-height: 18px;
+	min-height: 18px;
+}

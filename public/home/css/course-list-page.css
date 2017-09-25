@@ -1,0 +1,37 @@
+
+
+
+/* 课程内容区开始 */
+#course-content{
+	min-height: 500px;
+	padding:60px 0;
+}	
+#course-content #course-list>div{
+	background: #fff;
+	border:1px solid #eceef0;
+}
+/* 课程标签 */
+#course-content .course_label{
+	margin: 0;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 30px;
+	padding-top: 15px;
+}
+#course-content .course_label ul{
+	list-style: none;
+	clear: both;
+	margin:0;
+	padding:0;
+}
+#course-content .course_label ul li{
+	float: left;
+}
+#course-content .course_label ul li a{
+	display: inline-block;
+	padding:13px 15px;
+	color: #666;
+}
+#course-content .course_label ul li.active a,
+#course-content .course_label ul li a:hover{
+	color: #00bc9c;
+}

@@ -1,0 +1,116 @@
+/*在线客服*/
+.float-consult {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  /*visibility: hidden;*/
+  z-index: 999;
+}
+.float-consult .btn {
+  padding: 10px 15px 8px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #fff;
+  border:none;
+}
+.float-consult .btn:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.float-consult .btn:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.btn-group-vertical>.btn+.btn{
+	margin-top: 0;
+}
+
+	/*按钮色系 开始*/
+.float-consult .btn-consult-default {
+  background: #00bc9c;
+  border-bottom: 1px solid #00a98c;
+}
+.float-consult .btn-consult-default:hover {
+  background: #26a86c;
+  border-bottom: 1px solid #15975b;
+}
+.float-consult .btn-consult-warning {
+  background: #e67e22;
+  border-bottom: 1px solid #d56d11;
+}
+.float-consult .btn-consult-warning:hover {
+  background: #d56d11;
+  border-color: #c45c00;
+}
+.float-consult .btn-consult-danger {
+  background: #e74c3c;
+  border-bottom: 1px solid #d63b2b;
+}
+.float-consult .btn-consult-danger:hover {
+  background: #d63b2b;
+  border-bottom: 1px solid #c52a1a;
+}
+.float-consult .btn-consult-blue {
+  background: #2453A9;
+  border-bottom: 1px solid #2443A9;
+}
+.float-consult .btn-consult-blue:hover {
+  background: #2443A9;
+  border-bottom: 1px solid #333;
+} 
+.float-consult .btn:last-child{
+	border-bottom: none;
+}
+	/*图标*/
+.float-consult .icon{
+	display: block;
+	width: 20px;
+	height: 22px;
+	background: url(../static/Online-Service.png) no-repeat;
+}
+.float-consult .icon.icon-qq{
+	background-position: 0 0;
+}
+.float-consult .icon.icon-qqgroup{
+	background-position: 0 -26px;
+}
+.float-consult .icon.icon-tphone{
+	background-position: 0 -54px;
+}
+.float-consult .icon.icon-weixin{
+	background-position: 0 -82px;
+}
+.float-consult .icon.icon-email{
+	background-position: 0 -107px;
+}
+
+.float-consult .consult-contents{
+	display: none;
+}
+
+.popover{
+	width: 250px;
+	font-family: "microsoft yahei";
+}
+.popover-title{
+	font-weight: normal;
+}
+.popover .popover-content {
+	padding:10px 15px;
+}
+.popover .popover-content .qq_item img{
+	width: 21px;
+	height: 21px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.popover .popover-content .qq_item a{
+	color: #00bc9c;
+	font-size: 14px;
+	list-height:21px;
+}
+.popover .popover-content .weixin_img{
+	width: 100%;
+	height: 100%;
+}
