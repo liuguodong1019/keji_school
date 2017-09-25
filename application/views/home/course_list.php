@@ -5,8 +5,6 @@
 <body>
 <?php $this->load->view('home/public/header');?> 
 
-	
-
 	<div class="banner">
 			<img src="<?php echo base_url()?>/public/home/static/keji_photo.jpg" alt="">
 	</div>
